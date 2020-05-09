@@ -13,10 +13,12 @@ namespace Lab03
         {
             ArrayList ciudades = new ArrayList();
             bool continuar = true;
+
+            // Carga al menos 10 ciudades
             while (continuar)
             {
                 Ciudad c = new Ciudad();
-                Console.Write("Ingresar código postal" + (ciudades.Count >= 5 ? "(-1 para salir): ": ": "));
+                Console.Write("Ingresar código postal" + (ciudades.Count >= 10 ? "(-1 para salir): ": ": "));
                 c.codigoPostal = int.Parse(Console.ReadLine());
                 if (c.codigoPostal != -1)
                 {
@@ -24,17 +26,29 @@ namespace Lab03
                     c.nombre = Console.ReadLine();
                     ciudades.Add(c);
                 }    
-                else if (ciudades.Count >= 5)
+                else if (ciudades.Count >= 10)
                 {
                     continuar = false;
                 }
-
-
             }
 
-            foreach (Ciudad c in ciudades)
+            // Lee 3 caracteres de búsqueda
+            string busqueda;
+            Console.Clear();
+            Console.Write("Escribir tres caracteres para buscar ciudad: ");
+            do
             {
-                Console.WriteLine("nombre: " + c.nombre);
+                busqueda = Console.ReadLine();
+            } while (busqueda.Length != 3);
+
+            // Busca
+            var seleccion = from Ciudad c in ciudades
+                            where c.nombre.Contains(busqueda)
+                            select c;
+
+            // Muestra
+            foreach (Ciudad c in seleccion)
+            {
                 Console.WriteLine("cp: " + c.codigoPostal);
                 Console.WriteLine();
             }

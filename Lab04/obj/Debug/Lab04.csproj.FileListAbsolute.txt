@@ -1,0 +1,7 @@
+C:\Users\braia\Documents\.NET\labs\LabSintaxisAvanzada\Lab04\obj\Debug\Lab04.csprojAssemblyReference.cache
+C:\Users\braia\Documents\.NET\labs\LabSintaxisAvanzada\Lab04\obj\Debug\Lab04.csproj.CoreCompileInputs.cache
+C:\Users\braia\Documents\.NET\labs\LabSintaxisAvanzada\Lab04\bin\Debug\Lab04.exe.config
+C:\Users\braia\Documents\.NET\labs\LabSintaxisAvanzada\Lab04\bin\Debug\Lab04.exe
+C:\Users\braia\Documents\.NET\labs\LabSintaxisAvanzada\Lab04\bin\Debug\Lab04.pdb
+C:\Users\braia\Documents\.NET\labs\LabSintaxisAvanzada\Lab04\obj\Debug\Lab04.exe
+C:\Users\braia\Documents\.NET\labs\LabSintaxisAvanzada\Lab04\obj\Debug\Lab04.pdb
